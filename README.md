@@ -24,4 +24,23 @@ DELETE — berilgan id dagi arizani oʻchirib yuborish. (api/7)
 </small>
 <br><br><br><br><br><br>
 
+
+PS: 
+Agar qandaydur muammo sabab saytni faqat /web papkasi orqali ishlashini hoxlasangiz script turgan joydagi .htaccess fayliga quyidagi kodni joylang:
+<code>
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+
+    RewriteRule ^(.*)$ /web [L,R=301]
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^.*$ web/
+</IfModule>
+</code>
+
 Telegram: @C_Morgan</p>
