@@ -8,7 +8,7 @@ use yii\helpers\Html;
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Contact V4</title>
+ <title>Ariza qoldirish uchun forma</title>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <!--===============================================================================================-->
